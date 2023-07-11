@@ -17,8 +17,10 @@ class QuizView(
     private val binding = LayoutQuizBinding.inflate(LayoutInflater.from(context), this, true)
 
     fun setContent(point: PointUIModel) {
+
         with(binding) {
             iconImage.loadImage(point.quizIcon)
+
             titleText.text = point.quizTitle
             descriptionText.text = point.quizDescription
 

@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/shape_rectangle_background"
-    android:backgroundTint="@color/yellow_primary"
-    android:gravity="center"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/yellow_primary"
     android:minWidth="@dimen/dimen_270_dp"
-    android:paddingVertical="@dimen/dimen_18_dp"
+    app:cardCornerRadius="@dimen/dimen_26_dp"
     tools:ignore="MissingDefaultResource">
 
-    <ProgressBar
-        android:id="@+id/loader_progressBarr"
-        android:layout_width="@dimen/dimen_29_dp"
-        android:layout_height="@dimen/dimen_29_dp"
-        android:layout_marginEnd="@dimen/dimen_20_dp" />
-
-    <TextView
-        android:id="@+id/loader_text"
-        style="@style/normal"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/loader_title"
-        android:textColor="@color/neutral_04_white" />
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingVertical="@dimen/dimen_12_dp">
 
-</LinearLayout>
+        <ProgressBar
+            android:id="@+id/loader_progressBarr"
+            android:layout_width="@dimen/dimen_29_dp"
+            android:layout_height="@dimen/dimen_29_dp"
+            android:layout_marginEnd="@dimen/dimen_20_dp" />
+
+        <TextView
+            android:id="@+id/loader_text"
+            style="@style/normalMyriadGeo_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loader_title"
+            android:textColor="@color/neutral_04_white" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

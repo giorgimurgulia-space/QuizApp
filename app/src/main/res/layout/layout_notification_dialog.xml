@@ -9,10 +9,10 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/icon_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_10_dp"
-        android:paddingHorizontal="@dimen/dimen_34_dp"
+        android:layout_marginTop="@dimen/dimen_20_dp"
         android:text="@string/congratulation_icon"
         android:textAlignment="center"
         android:textSize="@dimen/dimen_30_sp" />
@@ -21,7 +21,7 @@
         android:id="@+id/title_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_8_dp"
+        android:layout_marginTop="@dimen/dimen_12_dp"
         android:paddingHorizontal="@dimen/dimen_34_dp"
         android:textAlignment="center"
         android:textColor="@color/neutral_04_white"
@@ -33,7 +33,7 @@
         android:id="@+id/description_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_4_dp"
+        android:layout_marginTop="@dimen/dimen_12_dp"
         android:paddingHorizontal="@dimen/dimen_34_dp"
         android:textAlignment="center"
         android:textColor="@color/blue_secondary_default"
@@ -45,12 +45,12 @@
         android:id="@+id/line_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_1_dp"
-        android:layout_marginTop="@dimen/dimen_8_dp"
+        android:layout_marginTop="@dimen/dimen_20_dp"
         android:background="@color/neutral_04_white" />
 
     <TextView
         android:id="@+id/closeButton"
-        style="@style/normal"
+        style="@style/normalMyriadGeo_Regular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="@dimen/dimen_10_dp"

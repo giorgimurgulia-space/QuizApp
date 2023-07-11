@@ -10,5 +10,6 @@ data class UserPointEntity(
     val quizTitle: String,
     val quizDescription: String,
     val quizIcon: String,
-    var point: Float
+    var point: Float,
+    val questionCount: Int
 )

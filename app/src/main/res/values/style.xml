@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="normal">
+    <style name="normalMyriadGeo_Regular">
         <item name="android:textSize">@dimen/dimen_16_sp</item>
-        <item name="lineHeight">@dimen/dimen_16_sp</item>
-    </style>
-    <style name="medium">
-        <item name="android:textSize">@dimen/dimen_21_sp</item>
-        <item name="lineHeight">@dimen/dimen_21_sp</item>
+        <item name="lineHeight">@dimen/dimen_24_dp</item>
+        <item name="fontFamily">@font/myriad_geo</item>
     </style>
 
-    <style name="small">
+    <style name="mediumMyriadGeo_Regular">
+        <item name="android:textSize">@dimen/dimen_21_sp</item>
+        <item name="lineHeight">@dimen/dimen_21_sp</item>
+        <item name="fontFamily">@font/myriad_geo</item>
+    </style>
+
+    <style name="smallMyriadGeo_Regular">
         <item name="android:textSize">@dimen/dimen_12_sp</item>
         <item name="lineHeight">@dimen/dimen_16_sp</item>
+        <item name="fontFamily">@font/myriad_geo</item>
+    </style>
+
+    <style name="MyProgressBar" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:radius">@dimen/dimen_12_sp</item>
+        <item name="borderRoundPercent">20</item>
+        <item name="android:progressBackgroundTint">@color/neutral_02_grey</item>
+        <item name="android:progressTint">@color/blue_secondary_default</item>
     </style>
 
 </resources>

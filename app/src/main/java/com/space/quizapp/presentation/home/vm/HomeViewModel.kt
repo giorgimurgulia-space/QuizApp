@@ -16,9 +16,9 @@ import com.space.quizapp.presentation.base.vm.BaseViewModel
 import com.space.quizapp.presentation.home.ui.HomeFragmentDirections
 import com.space.quizapp.presentation.model.AvailableQuizUIModel
 import com.space.quizapp.presentation.model.DialogItem
-import com.space.quizapp.presentation.model.DialogUIModel
 import com.space.quizapp.presentation.model.UserUIModel
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.collectLatest
@@ -67,6 +67,7 @@ class HomeViewModel @Inject constructor(
             } catch (e: Error) {
                 setDialog(
                     DialogItem.NotificationDialog(
+                        icon = false,
                         title = R.string.error_message_close,
                         onCloseButton = { navigateBack() }
                     )

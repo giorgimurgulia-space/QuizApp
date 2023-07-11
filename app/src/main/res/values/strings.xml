@@ -6,7 +6,7 @@
     <string name="please_input_username">გთხოვთ შეიყავნოთ სახელი</string>
     <string name="invalid_username">სახელის სტრუქტურა არასწორია</string>
     <string name="try_again">კიდევ სცადეთ</string>
-    <string name="detail">დეტალირად</string>
+    <string name="detail">დეტალურად</string>
     <string name="chose_subject">აირჩიე საგანი</string>
     <string name="hello">გამარჯობა,</string>
     <string name="welcome_messages">გამარჯობა, %1$s</string>
@@ -22,9 +22,12 @@
     <string name="cancel_quiz">ნამდვილად გსურს ქვიზის შეწყვეტა?</string>
     <string name="my_points">დაგროვილი ქულები</string>
     <string name="plus_one">+1</string>
+    <string name="current_point">მიმდინარე ქულა: %1$s</string>
+    <string name="question_progress">%1$s/%2$s</string>
     <string name="congratulation">გილოცავ!</string>
     <string name="your_point">შენ დააგროვე %1$s ქულა</string>
     <string name="next">შემდეგი</string>
     <string name="finish">დასრულება</string>
     <string name="congratulation_icon">🎉</string>
+    <string name="no_points">🧐 \n სამწუხაროდ, \n ქულები ჯერ არ გაქვს დაგროვილი.</string>
 </resources>

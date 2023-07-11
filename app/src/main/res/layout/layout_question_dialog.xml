@@ -8,7 +8,7 @@
     android:maxWidth="@dimen/dimen_300_dp"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/dimen_34_dp"
-    android:paddingVertical="@dimen/dimen_18_dp">
+    android:paddingVertical="@dimen/dimen_34_dp">
 
     <TextView
         android:id="@+id/title_text"
@@ -23,12 +23,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="38dp"
-        android:layout_marginTop="@dimen/dimen_16_dp"
+        android:layout_marginTop="@dimen/dimen_24_dp"
         android:gravity="center">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/no_button"
-            style="@style/small"
+            style="@style/smallMyriadGeo_Regular"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen_34_dp"
             android:layout_marginEnd="@dimen/dimen_5_dp"
@@ -38,7 +38,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/yes_button"
-            style="@style/small"
+            style="@style/smallMyriadGeo_Regular"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dimen_34_dp"
             android:background="@drawable/shape_rectangle_background"

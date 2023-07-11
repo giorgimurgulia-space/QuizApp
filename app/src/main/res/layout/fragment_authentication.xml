@@ -10,9 +10,9 @@
         android:id="@+id/illustration_bkg_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_0_dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:cornerColor="@color/blue_secondary_default"
         app:backgroundColor="@color/blue_secondary_light"
+        app:cornerColor="@color/blue_secondary_default"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -45,7 +45,7 @@
 
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/name_editText"
-        style="@style/small"
+        style="@style/smallMyriadGeo_Regular"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dimen_55_dp"
@@ -59,15 +59,18 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/start_button"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_44_dp"
+        style="@style/normalMyriadGeo_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dimen_117_dp"
         android:layout_marginTop="@dimen/dimen_24_dp"
-        android:background="@drawable/shape_rectangle_background"
+        android:background="@drawable/shape_input_background"
         android:backgroundTint="@color/yellow_primary"
+        android:padding="@dimen/dimen_16_dp"
         android:text="@string/start_quiz"
         android:textColor="@color/neutral_04_white"
-        android:textSize="@dimen/dimen_12_sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/name_editText" />
 
 

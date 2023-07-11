@@ -8,6 +8,8 @@ data class QuizPagePayLoad(
     val question: String? = null,
     val answers: List<AnswerUIModel> = emptyList(),
     val correctAnswerIndex: Int? = null,
+    val questionIndex: Int = 0,
+    val questionCount: Int = 0,
+    val currentPoint: Float = 0.0.toFloat(),
     val isLastQuestion: Boolean = false,
-    val point: Float? = null
 )

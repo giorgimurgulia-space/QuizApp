@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/dimen_16_dp"
-    android:paddingTop="@dimen/dimen_24_dp">
+    android:paddingTop="@dimen/dimen_16_dp">
 
     <ImageView
         android:id="@+id/back_image"
@@ -19,7 +19,7 @@
 
     <TextView
         android:id="@+id/title_text"
-        style="@style/normal"
+        style="@style/normalMyriadGeo_Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="@dimen/dimen_5_dp"
@@ -42,13 +42,27 @@
         app:layout_constraintTop_toBottomOf="@id/title_text"
         tools:listitem="@layout/layout_quiz" />
 
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_points_text"
+        style="@style/normalMyriadGeo_Regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_50_dp"
+        android:gravity="center"
+        android:text="@string/no_points"
+        android:textColor="@color/neutral_01_dark_grey"
+        app:layout_constraintBottom_toTopOf="@id/line_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text" />
+
     <View
         android:id="@+id/line_view"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_2_dp"
         android:backgroundTint="@color/neutral_02_grey"
-        app:layout_constraintBottom_toTopOf="@id/log_out_button"
-        app:layout_constraintTop_toBottomOf="@id/main_recycler" />
+        app:layout_constraintBottom_toTopOf="@id/log_out_button" />
 
     <ImageView
         android:id="@+id/log_out_button"
@@ -60,8 +74,7 @@
         android:scaleType="centerInside"
         android:src="@drawable/ic_log_out"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/line_view" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
